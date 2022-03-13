@@ -21,8 +21,9 @@ function App() {
       <button className='floating-edit-button'><i class="bi bi-pencil-fill"></i></button>
       <div className='image-container'>
         <div className='mobile-view-join-group'>
-          <img src={require('./assets/arrow.png')}/>
-          {!isLoggedIn && <button className='btn btn-outline-light' onClick={()=>setShowSignUp(true)}>Join Group</button>}
+          <img src={require('./assets/arrow.png')} alt="back-button"/>
+          {!isLoggedIn && <button className='btn btn-outline-light' 
+          onClick={()=>setShowSignUp(true)}>Join Group</button>}
           {isLoggedIn && <button className='btn btn-outline-light' onClick={()=>setLoggedIn(false)}>Leave Group</button>}
           
         </div>
@@ -42,7 +43,7 @@ function App() {
             data.map(item=>
               
               <Card key={item.id}>
-              {item.background && <img src={require(`./assets/${item.background}`)} className="card-image"/>}
+              {item.background && <img src={require(`./assets/${item.background}`)} className="card-image" alt="background"/>}
               <CardBody 
               type={item.type} 
               title={item.title} 

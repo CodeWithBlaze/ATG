@@ -22,12 +22,12 @@ const SignUpForm = ({changeToSignIn,stopSignUp}) => {
                         changeToSignIn(true)
                         stopSignUp(false);
                     }}>or, Sign In</label>
-                            <button className='btn btn-light mt-3 custom-button-sign'><img src={require('../assets/fb.png')} className="me-2"/>Sign up with Facebook</button>
+                            <button className='btn btn-light mt-3 custom-button-sign'><img src={require('../assets/fb.png')} className="me-2" alt="facebook"/>Sign up with Facebook</button>
                             <button className='btn btn-light mt-3 custom-button-sign'><i class="bi bi-google me-2"/>Sign up with Google</button>
                         </div>
                     </div>
                 
-                <img src={require('../assets/form-background.png')}/>
+                <img src={require('../assets/form-background.png')} alt="form-background"/>
                 </div>
                 </>
      );

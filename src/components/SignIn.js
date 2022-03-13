@@ -32,13 +32,13 @@ const SignIn = ({changeToSignUp,stopSignIn,updateLoggedIn}) => {
                                     changeToSignUp(true)
                                     stopSignIn(false);
                                 }}>or, Sign Up</label>
-                            <button className='btn btn-light mt-3 custom-button-sign'><img src={require('../assets/fb.png')} className="me-2"/>Sign in with Facebook</button>
+                            <button className='btn btn-light mt-3 custom-button-sign'><img src={require('../assets/fb.png')} className="me-2" alt="facebook"/>Sign in with Facebook</button>
                             <button className='btn btn-light mt-3 custom-button-sign'><i class="bi bi-google me-2"/>Sign in with Google</button>
                             <label style={{marginTop:20,fontWeight:600,fontSize:12}}>Forgot Password?</label>
                         </div>
                     </div>
                 
-                <img src={require('../assets/form-background.png')}/>
+                <img src={require('../assets/form-background.png')} alt="form-background"/>
                 </div>
                 </>
      );
